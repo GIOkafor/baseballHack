@@ -1,3 +1,13 @@
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+a {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .container {
 	position: fixed;
 	width: 100%;
@@ -14,6 +24,7 @@
 	max-width: 375px;
 	max-height: 635px;
 	border: 1px solid #eee;
+	overflow: scroll;
 }
 
 .shadow {
@@ -32,6 +43,6 @@
 	mix-blend-mode: multiply;
 }
 
-.fa-shopping-cart{
+.fa-shopping-cart {
 	cursor: pointer;
 }

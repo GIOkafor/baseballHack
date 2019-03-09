@@ -1,0 +1,46 @@
+.menu_details_component {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: calc(100% - 56px);
+}
+
+.image_container {
+	width: 100%;
+	height: 200px;
+	background-color: #aaa;
+}
+
+.menu_item_details {
+	width: 100%;
+	background-color: #ddd;
+	padding: 14px 22px;
+}
+
+.menu_item_name {
+	margin: 0;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.menu_item_price {
+	margin: 0;
+	font-size: 18px;
+}
+
+.menu_item_description {
+	padding: 14px 22px;
+}
+
+.cta {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+
+.bottom {
+	width: 100%;
+	padding: 14px;
+}
