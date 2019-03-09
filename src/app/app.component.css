@@ -43,6 +43,7 @@ a {
 	mix-blend-mode: multiply;
 }
 
-.fa-shopping-cart {
+.fa-shopping-cart, 
+.fa-arrow-left{
 	cursor: pointer;
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'baseballHack';
+  showBack = false;
+
+  constructor(
+    private router: Router,
+    private location: Location){
+    router.events.subscribe( (event) => ( event instanceof NavigationEnd ) && this.handleRouteChange() );
+  }
+
+  handleRouteChange = () => {
+    if (this.router.url.includes('cart')){
+     console.log("we're in the cart view");
+     this.showBack = true;
+    }else{
+      this.showBack = false;
+    }
+  }
+
+  goBack(){
+    this.location.back();
+  }
 }
