@@ -11,6 +11,8 @@
 	align-items: center;
 	padding: 20px;
 	justify-content: space-between;
+	background-image: url('/assets/main_hero.jpg');
+	background-size: cover;
 }
 
 .image__container {
@@ -36,7 +38,7 @@
 
 .bottom_text {
 	font-size: 12px;
-	color: #888;
+	color: #fff;
 	text-align: center;
 	margin-top: 20px;
 }

@@ -1,5 +1,5 @@
 .menuitems__section {
-	padding: 40px 20px;
+	padding: 20px 20px 0px;
 }
 
 .menuitems__heading {
@@ -19,27 +19,41 @@
 	width: calc(50% - 10px);
 	margin: 5px;
 	list-style: none;
-	background-color: #aaa;
-	height: 100px;
+	height: 150px;
 	position: relative;
 	border-radius: 5px;
 	cursor: pointer;
+	border: 1px solid #ccc;
+}
+
+.menuitem__image {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
 }
 
 .menuitem__description {
 	position: absolute;
-	width: 100%;
+	width: calc(100% - 10px);
 	bottom: 5px;
-	left: 0;
+	left: 5px;
+	background-color: rgba(5, 42, 95, 0.5);
+	border-radius: 3px;
+	color: #fff;
+	padding: 5px 0;
 }
 
 .menuitem__name {
 	margin: 0;
 	text-align: center;
 	font-weight: 700;
+	font-size: 12px;
 }
 
 .menuitem__price {
 	margin: 0;
 	text-align: center;
+	font-size: 12px;
 }
