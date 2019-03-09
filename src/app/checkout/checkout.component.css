@@ -1,0 +1,35 @@
+.checkout_component {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: calc(100% - 56px);
+}
+
+.stripe_logo {
+	width: 80%;
+	display: block;
+	margin-top: 14px;
+}
+
+.select_seat_container {
+	width: 100%;
+	padding: 14px 22px;
+}
+
+.select_seat_label {
+	margin: 0;
+	color: #888;
+	font-size: 12px;
+}
+
+.cta {
+	width: 100%;
+	background-color: #0476bf;
+	color: #fff;
+	padding: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+}
