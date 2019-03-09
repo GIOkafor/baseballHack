@@ -3,30 +3,16 @@
     <h3 class="menuitems__heading">FOOD</h3>
 
     <ul class="menuitems__content">
-      <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
+      <!-- repeat for each item in foodItems start -->
+      <li class="menuitem__container"
+        *ngFor="let food of foodItems"
+        [routerLink]="['/menu-details', food.name]">
         <div class="menuitem__description">
-            <p class="menuitem__name">Tacos</p>
-            <p class="menuitem__price">$0.00</p>
+            <p class="menuitem__name">{{food.name}}</p>
+            <p class="menuitem__price">${{food.price}}</p>
         </div>
       </li>
-      <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
-        <div class="menuitem__description">
-            <p class="menuitem__name">Tacos</p>
-            <p class="menuitem__price">$0.00</p>
-        </div>
-      </li>
-      <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
-        <div class="menuitem__description">
-            <p class="menuitem__name">Tacos</p>
-            <p class="menuitem__price">$0.00</p>
-        </div>
-      </li>
-      <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
-        <div class="menuitem__description">
-            <p class="menuitem__name">Tacos</p>
-            <p class="menuitem__price">$0.00</p>
-        </div>
-      </li>
+      <!-- repeat for each item in foodItems end -->
     </ul>
   </div>
 
@@ -34,22 +20,11 @@
       <h3 class="menuitems__heading">DRINKS</h3>
   
       <ul class="menuitems__content">
-          <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
+          <!-- repeat for each item in drinkItems start -->
+          <li class="menuitem__container" *ngFor="let drink of drinkItems" [routerLink]="['/menu-details', drink.name]">
             <div class="menuitem__description">
-                <p class="menuitem__name">Tacos</p>
-                <p class="menuitem__price">$0.00</p>
-            </div>
-          </li>
-          <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
-            <div class="menuitem__description">
-                <p class="menuitem__name">Tacos</p>
-                <p class="menuitem__price">$0.00</p>
-            </div>
-          </li>
-          <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
-            <div class="menuitem__description">
-                <p class="menuitem__name">Tacos</p>
-                <p class="menuitem__price">$0.00</p>
+                <p class="menuitem__name">{{drink.name}}</p>
+                <p class="menuitem__price">${{drink.price}}</p>
             </div>
           </li>
       </ul>
