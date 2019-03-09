@@ -20,10 +20,16 @@ export class MenuDetailsComponent implements OnInit {
       'name': 'hot dog',
       'price': 20
     }
+
+    //getItem(index)
   }
 
   addToCart(item){
     this.cartSvc.addToCart(item);
+  }
+
+  getItem(index){
+    //
   }
 
 }

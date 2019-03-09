@@ -18,8 +18,7 @@ export class AppComponent {
   }
 
   handleRouteChange = () => {
-    if (this.router.url.includes('cart')){
-     console.log("we're in the cart view");
+    if (this.router.url.includes('cart') || this.router.url.includes('details')){
      this.showBack = true;
     }else{
       this.showBack = false;
