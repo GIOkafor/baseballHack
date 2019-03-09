@@ -31,3 +31,7 @@
 	box-shadow: 0 16px 48px #e3e7eb;
 	mix-blend-mode: multiply;
 }
+
+.fa-shopping-cart{
+	cursor: pointer;
+}
