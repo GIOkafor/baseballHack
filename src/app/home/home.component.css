@@ -21,17 +21,12 @@
 }
 
 .logo {
-	max-width: 40%;
-	margin: 5px;
-	display: flex;
-	flex: 1;
+	max-width: 95px;
+	margin-right: 5px;
 }
 
 .logo2 {
-	max-width: 60%;
-	margin: 5px;
-	display: flex;
-	flex: 1;
+	max-width: 150px;
 }
 
 .bottom_container {
