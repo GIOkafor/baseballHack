@@ -1,8 +1,8 @@
 <div class="container">
-  <div class="mobile-view shadow">
-      <nav class="navbar navbar-light bg-light justify-content-between">
-        <a *ngIf="!showBack" class="navbar-brand" routerLink="/menu-list">Baseball App</a>
+  <div class="mobile-view">
+      <nav class="mlb-navbar navbar navbar-light bg-light justify-content-between">
         <i *ngIf="showBack" class="fas fa-arrow-left" (click)="goBack()"></i>
+        <a class="mlb-navbar-brand navbar-brand" routerLink="/menu-list">{{pageTitle}}</a>
 
         <i class="fas fa-shopping-cart" routerLink="/cart"></i>
       </nav>

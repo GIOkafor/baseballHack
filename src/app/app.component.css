@@ -25,10 +25,20 @@ a {
 	max-height: 635px;
 	border: 1px solid #eee;
 	overflow: scroll;
+	position: relative;
 }
 
 .shadow {
 	position: relative;
+}
+
+.mlb-navbar {
+	background-color: #052a5f !important;
+	color: #fff !important;
+}
+
+.mlb-navbar-brand {
+	color: #fff !important;
 }
 
 .shadow::before {
@@ -43,7 +53,7 @@ a {
 	mix-blend-mode: multiply;
 }
 
-.fa-shopping-cart, 
-.fa-arrow-left{
+.fa-shopping-cart,
+.fa-arrow-left {
 	cursor: pointer;
 }
