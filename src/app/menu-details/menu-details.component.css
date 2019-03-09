@@ -10,12 +10,16 @@
 .image_container {
 	width: 100%;
 	height: 200px;
-	background-color: #aaa;
+}
+
+.image {
+	height: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
 .menu_item_details {
 	width: 100%;
-	background-color: #ddd;
 	padding: 14px 22px;
 }
 
@@ -23,11 +27,14 @@
 	margin: 0;
 	font-weight: 700;
 	font-size: 20px;
+	color: #052a5f;
 }
 
 .menu_item_price {
 	margin: 0;
 	font-size: 18px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #aaa;
 }
 
 .menu_item_description {
