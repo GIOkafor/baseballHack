@@ -13,6 +13,7 @@
 	height: 100%;
 	max-width: 375px;
 	max-height: 635px;
+	border: 1px solid #eee;
 }
 
 .shadow {
