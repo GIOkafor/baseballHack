@@ -1,23 +1,57 @@
 <div class="menu_list_component">
-  <h1>MENU</h1>
+  <div class="menuitems__section">
+    <h3 class="menuitems__heading">FOOD</h3>
 
-  <div class="food">
-    <h3>FOOD</h3>
-
-    <ul class="food-list">
-      <li [routerLink]="['/menu-details', 'tacos']">Tacos</li>
-      <li>Hot dogs</li>
-      <li>Hamburgers</li>
+    <ul class="menuitems__content">
+      <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
+        <div class="menuitem__description">
+            <p class="menuitem__name">Tacos</p>
+            <p class="menuitem__price">$0.00</p>
+        </div>
+      </li>
+      <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
+        <div class="menuitem__description">
+            <p class="menuitem__name">Tacos</p>
+            <p class="menuitem__price">$0.00</p>
+        </div>
+      </li>
+      <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
+        <div class="menuitem__description">
+            <p class="menuitem__name">Tacos</p>
+            <p class="menuitem__price">$0.00</p>
+        </div>
+      </li>
+      <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
+        <div class="menuitem__description">
+            <p class="menuitem__name">Tacos</p>
+            <p class="menuitem__price">$0.00</p>
+        </div>
+      </li>
     </ul>
   </div>
 
-  <div>
-    <h3>DRINKS: </h3>
-
-    <ul>
-      <li>Coke</li>
-      <li>Diet Coke</li>
-      <li>Spring Water</li>
-    </ul>
-  </div>
+  <div class="menuitems__section">
+      <h3 class="menuitems__heading">DRINKS</h3>
+  
+      <ul class="menuitems__content">
+          <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
+            <div class="menuitem__description">
+                <p class="menuitem__name">Tacos</p>
+                <p class="menuitem__price">$0.00</p>
+            </div>
+          </li>
+          <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
+            <div class="menuitem__description">
+                <p class="menuitem__name">Tacos</p>
+                <p class="menuitem__price">$0.00</p>
+            </div>
+          </li>
+          <li class="menuitem__container" [routerLink]="['/menu-details', 'tacos']">
+            <div class="menuitem__description">
+                <p class="menuitem__name">Tacos</p>
+                <p class="menuitem__price">$0.00</p>
+            </div>
+          </li>
+      </ul>
+    </div>
 </div>
