@@ -12,28 +12,25 @@ import { CheckoutComponent } from './checkout/checkout.component';
 
 //routing stuff
 const appRoutes: Routes = [
-  { path: 'home', component: AppComponent },
-  { path: 'menu-list', component: MenuListComponent },
-  { path: 'menu-details', component: MenuDetailsComponent },
-  { path: 'cart', component: CartComponent },
-  { path: 'checkout', component: CheckoutComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-]
+	{ path: 'home', component: HomeComponent },
+	{ path: 'menu-list', component: MenuListComponent },
+	{ path: 'menu-details', component: MenuDetailsComponent },
+	{ path: 'cart', component: CartComponent },
+	{ path: 'checkout', component: CheckoutComponent },
+	{ path: '', redirectTo: '/home', pathMatch: 'full' }
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    MenuListComponent,
-    MenuDetailsComponent,
-    CartComponent,
-    CheckoutComponent
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(appRoutes)
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		MenuListComponent,
+		MenuDetailsComponent,
+		CartComponent,
+		CheckoutComponent
+	],
+	imports: [ BrowserModule, RouterModule.forRoot(appRoutes) ],
+	providers: [],
+	bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {}
