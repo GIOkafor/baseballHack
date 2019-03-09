@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class CartService {
 
-  cart: any;
+  cart = [];
 
   constructor() { }
 
@@ -18,6 +18,8 @@ export class CartService {
   //adds item to cart
   addToCart(item){
     console.log(item);
+
+    this.cart.push(item);
   }
 
   //remove item from cart
