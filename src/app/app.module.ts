@@ -14,10 +14,10 @@ import { CheckoutComponent } from './checkout/checkout.component';
 const appRoutes: Routes = [
 	{ path: 'home', component: HomeComponent },
 	{ path: 'menu-list', component: MenuListComponent },
-	{ path: 'menu-details', component: MenuDetailsComponent },
+	{ path: 'menu-details/:id', component: MenuDetailsComponent },
 	{ path: 'cart', component: CartComponent },
 	{ path: 'checkout', component: CheckoutComponent },
-	{ path: '', redirectTo: '/home', pathMatch: 'full' }
+	{ path: '', redirectTo: '/menu-list', pathMatch: 'full' }
 ];
 
 @NgModule({
