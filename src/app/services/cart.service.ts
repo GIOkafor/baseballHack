@@ -20,6 +20,7 @@ export class CartService {
     console.log(item);
 
     this.cart.push(item);
+    alert("Item added successfully");
   }
 
   //remove item from cart

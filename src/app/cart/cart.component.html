@@ -2,11 +2,11 @@
     <div class="cart_items_container">
       <!-- for each item in cart, repeat section below-->
       <!-- cart item repeat start -->
-      <div class="cart_item">
-        <img class="cart_item_image" src="assets/rogers_centre.png" />
+      <div class="cart_item" *ngFor="let item of cartItems">
+        <img class="cart_item_image" [src]="item.image" />
         <div class="cart_item_details">
-          <p class="cart_item_name">Hotdog</p>
-          <p class="cart_item_price">$0.00</p>
+          <p class="cart_item_name">{{item.name}}</p>
+          <p class="cart_item_price">${{item.price | number : '1.2-2'}}</p>
         </div>
         <div class="cart_item_quantity">
           <span class="cart_item_quantity--controls">-</span>

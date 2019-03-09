@@ -29,8 +29,8 @@ export class AppComponent {
 		} else if (url.includes('menu-list')) {
 			this.pageTitle = 'Menu';
 		} else if (url.includes('checkout')) {
-			this.pageTitle = 'Checkout';
-			this.showBack = true;
+      this.showBack = true;
+      this.pageTitle = 'Checkout';
 		} else {
 			this.showBack = false;
 		}
