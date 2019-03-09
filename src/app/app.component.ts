@@ -30,6 +30,7 @@ export class AppComponent {
 			this.pageTitle = 'Menu';
 		} else if (url.includes('checkout')) {
 			this.pageTitle = 'Checkout';
+			this.showBack = true;
 		} else {
 			this.showBack = false;
 		}
