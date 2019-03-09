@@ -19,6 +19,30 @@ export class MenuListComponent implements OnInit {
       'name': 'Hot Dog',
       'price': 8.50,
       'image': ''
+    },
+    {
+      'id': 9,
+      'name': 'Chips with Cheese',
+      'price': 13.50,
+      'image': ''
+    },
+    {
+      'id': 10,
+      'name': 'Salad Bowl',
+      'price': 12.50,
+      'image': ''
+    },
+    {
+      'id': 11,
+      'name': 'Beef Burrito',
+      'price': 12.50,
+      'image': ''
+    },
+    {
+      'id': 12,
+      'name': 'Chicken Quesidilla',
+      'price': 13.50,
+      'image': ''
     }
   ];
 

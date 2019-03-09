@@ -1,9 +1,9 @@
 <div class="menu_details_component">
   <div class="main">
     <div class="image_container"></div>
-    <div class="menu_item_details">
-      <h1 class="menu_item_name">Hotdog</h1>
-      <p class="menu_item_price">$0.00</p>
+    <div class="menu_item_details" *ngIf="item">
+      <h1 class="menu_item_name">{{item.name}}</h1>
+      <p class="menu_item_price">${{item.price | number : '1.2-2'}}</p>
     </div>
     <p class="menu_item_description">
       Steamed link-sausage sandwich where the sausage is served in the slit of a partially sliced hot dog bun.
