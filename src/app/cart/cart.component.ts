@@ -9,6 +9,8 @@ import { CartService } from '../services/cart.service';
 export class CartComponent implements OnInit {
 
   cartItems: any;
+  cartValue: any;
+  hst: any;
   
   constructor(
     private cartSvc: CartService
@@ -16,10 +18,30 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
     this.cartItems = this.cartSvc.getCart();
+    this.cartValue = this.calculateValue();
+    this.hst = (this.cartValue * 13)/100; 
   }
 
   getCart(){
     this.cartSvc.getCart();
+  }
+
+  calculateValue(){
+    let totalValue = 0;
+
+    for(var i = 0; i < this.cartItems.length; i++){
+      totalValue += this.cartItems[i].price;
+    }
+
+    return totalValue;
+  }
+
+  removeItem(index){
+    console.log("Deleting item with index: ", index);
+    
+    this.cartItems.splice(index, 1);
+    this.cartValue = this.calculateValue();
+    this.hst = (this.cartValue * 13)/100; 
   }
 
 }

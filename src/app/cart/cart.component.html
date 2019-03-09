@@ -2,7 +2,7 @@
     <div class="cart_items_container">
       <!-- for each item in cart, repeat section below-->
       <!-- cart item repeat start -->
-      <div class="cart_item" *ngFor="let item of cartItems">
+      <div class="cart_item" *ngFor="let item of cartItems; let i = index">
         <img class="cart_item_image" [src]="item.image" />
         <div class="cart_item_details">
           <p class="cart_item_name">{{item.name}}</p>
@@ -13,7 +13,7 @@
           <span>1</span>
           <span class="cart_item_quantity--controls">+</span>
         </div>
-        <div class="cart_item_remove">X</div>
+        <div class="cart_item_remove" (click)="removeItem(i)">X</div>
       </div>
       <!-- cart item repeat start -->
     </div>
@@ -21,12 +21,12 @@
     <div class="bottom">
       <div class="cart_price_container">
         <div class="cart_price_container--top">
-          <p class="cart_price_num">Subtotal: $0.00</p>
-          <p class="cart_price_num">HST: $0.00</p>
+          <p class="cart_price_num">Subtotal: ${{cartValue | number : '1.2-2'}}</p>
+          <p class="cart_price_num">HST: ${{hst | number : '1.2-2'}}</p>
         </div>
         <div class="cart_price_container--bottom">
           <span class="cart_price_total">TOTAL</span>
-          <span class="cart_price_totalnum">CAD $0.00</span>
+          <span class="cart_price_totalnum">CAD ${{cartValue + hst | number : '1.2-2'}}</span>
         </div>
       </div>
       <button class="cta btn" routerLink="/checkout">Checkout</button>
